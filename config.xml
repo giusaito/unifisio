@@ -71,7 +71,7 @@
         -->
 
         <!-- Legacy landscape -->
-        <!--
+        <!-- 
         <splash src="res/screen/ios/Default-Landscape~ipad.png" width="1024" height="768"/>
         <splash src="res/screen/ios/Default-Landscape@2x~ipad.png" width="2048" height="1536"/>
         -->
