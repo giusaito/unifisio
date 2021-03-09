@@ -1,0 +1,55 @@
+<div class="page agendar" data-name="agendar">
+    <div class="navbar">
+      <div class="navbar-bg"></div>
+      <div class="navbar-inner sliding">
+        <div class="left">
+          <a href="#" class="link back">
+            <i class="icon icon-back"></i>
+            <span>Voltar</span>
+          </a>
+        </div>
+        <div class="right">
+            Agendar
+        </div>
+      </div>
+    </div>
+    <div id="content" class="page-content ptr-content no-navbar">
+        <div class="card card-outline">
+            <div class="card-header">
+                <div id="welcome"></div>
+            </div>
+            <div class="card-content card-content-padding">
+              <p>OBS: Em alguns casos poderá acontecer do horário selecionado já estar reservado com outro cliente. Nesses casos entraremos em contato para alocar um horário disponível que seja do seu agrado, e o aplicativo será atualizado com a data nova. Obrigado!</p>
+              <form method="POST" id="profile" action="https://agendamento.unifisiocascavel.com.br/profile" accept-charset="UTF-8">
+                <div id="agendamento-error" class="item-input-error-message"></div>
+                <div class="list">
+                  <ul>
+                    <li class="item-content item-input">
+                      <div class="item-inner">
+                          <div class="item-title item-label">Data da sua preferência</div>
+                          <div class="item-input-wrap">
+                            <!-- <input type="text" placeholder="Select date and time" readonly="readonly" id="agendar-calendario" /> -->
+                            <input name="agendar" type="hidden" id="picker-date">
+                            <div id="agendar-calendario"></div>
+                          </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="item-content item-input item-input-outline">
+                        <div class="item-inner">
+                          <div class="item-title item-label item-floating-label">Descrição</div>
+                          <div class="item-input-wrap">
+                            <input name="description" type="text" placeholder="Descrição" class="">
+                            <span class="input-clear-button"></span>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </form>
+            </div>
+        </div>
+    </div>
+    <div class="fab fab-center-bottom fab-extended color-green" data-f7-slot="fixed" color="red"><a class="" id="button-agendar"><i class="icon f7-icons" style="">plus </i> <div class="fab-text">Agendar </div> </a> </div>
+</div>

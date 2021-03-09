@@ -1,0 +1,96 @@
+<div class="page login no-navbar" data-name="register">
+    <div class="page-content login-screen-content">
+        <a href="#" class="link back close-button">
+            <img src="/img/close.svg" alt="Close">
+        </a>
+        <div class="login-screen-title">Cadastre-se</div>
+        <form method="POST" id="register" action="https://agendamento.unifisiocascavel.com.br/register" accept-charset="UTF-8">
+            <div class="list">
+                <ul>
+                    <li class="item-content item-input">
+                        <div class="item-inner">
+                            <div class="item-title item-label">Nome</div>
+                            <div class="item-input-wrap">
+                                <input type="text" name="name" placeholder="Digite seu nome" />
+                                <span class="input-clear-button"></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item-content item-input">
+                        <div class="item-inner">
+                            <div class="item-title item-label">Email</div>
+                            <div class="item-input-wrap">
+                                <input type="email" name="email" placeholder="nome@email.com.br" />
+                                <span class="input-clear-button"></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item-content item-input">
+                        <div class="item-inner">
+                            <div class="item-title item-label">CPF</div>
+                            <div class="item-input-wrap">
+                                <input type="text" name="cpf" placeholder="Digite seu CPF" />
+                                <span class="input-clear-button"></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item-content item-input">
+                        <div class="item-inner">
+                            <div class="item-title item-label">Sexo</div>
+                            <div class="item-input-wrap">
+                                <select name="gender" placeholder="Por favor, selecione..." class="input-with-value">
+                                    <option value="masculino" selected="">Masculino</option>
+                                    <option value="feminino">Feminino</option>
+                                </select>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item-content item-input">
+                        <div class="item-inner">
+                            <div class="item-title item-label">Data de Nascimento</div>
+                            <div class="item-input-wrap">
+                                <input type="text" name="birth" placeholder="Informe o dia que nasceu" readonly="readonly" id="register-calendar"/>
+                                <span class="input-clear-button"></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item-content item-input">
+                        <div class="item-inner">
+                            <div class="item-title item-label">Telefone</div>
+                            <div class="item-input-wrap">
+                                <input type="tel" name="phone" placeholder="Digite seu Telefone" />
+                                <span class="input-clear-button"></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item-content item-input">
+                        <div class="item-inner">
+                            <div class="item-title item-label">Senha</div>
+                            <div class="item-input-wrap">
+                                <input type="password" name="password" placeholder="Sua senha" />
+                                <span class="input-clear-button"></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item-content item-input">
+                        <div class="item-inner">
+                            <div class="item-title item-label">Confirmar Senha</div>
+                            <div class="item-input-wrap">
+                                <input type="password" name="c_password" placeholder="Confirmar senha" />
+                                <span class="input-clear-button"></span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="list">
+                <ul>
+                    <li><a class="list-button button register-button" href="#">Cadastrar</a></li>
+                </ul>
+                <div class="block-footer">
+                    <p>Efetue seu cadastro para acompanhar seu agendamento</p>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

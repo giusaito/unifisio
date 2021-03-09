@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "833898837246",
+    "project_id": "unifisio-731a2",
+    "storage_bucket": "unifisio-731a2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:833898837246:android:00b27f2b58e5e10ed361af",
+        "android_client_info": {
+          "package_name": "com.giulianosaito.unifisio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "833898837246-6ndnftp4namll9t9g9gmkoo2be9kh9sb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0IQeEAWinNdQvTYMRlannCSN3WJBRN4w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "833898837246-6ndnftp4namll9t9g9gmkoo2be9kh9sb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

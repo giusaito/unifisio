@@ -1,0 +1,216 @@
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+@font-face {
+    font-family: 'Framework7 Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/Framework7Icons-Regular.eot");
+    src: local('Framework7 Icons'),
+        local('Framework7Icons-Regular'),
+        url("../fonts/Framework7Icons-Regular.woff2") format("woff2"),
+        url("../fonts/Framework7Icons-Regular.woff") format("woff"),
+        url("../fonts/Framework7Icons-Regular.ttf") format("truetype");
+}
+
+.f7-icons, .framework7-icons {
+    font-family: 'Framework7 Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 28px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-feature-settings: "liga";
+    -moz-font-feature-settings: "liga=1";
+    -moz-font-feature-settings: "liga";
+    font-feature-settings: "liga";
+}
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+}
+.statusbar-overlay {
+    background: #000000;
+}
+
+/* .ios .toolbar~* .page-content, .ios .toolbar~.page-content{
+    margin-top:45px;
+}
+.page-content {
+    padding-bottom:45px !important;
+}
+.login-screen-content {
+    margin:0 !important;
+} */
+.navbar .link {
+  font-size: 12px;
+}
+.navbar .f7-icons, .navbar .framework7-icons {
+  font-size: 20px !important;
+  margin-left:10px;
+  color:#1d71b8;
+}
+.navbar .login-link::after {
+  content:"/";
+  margin-left:5px;
+  display: block;
+}
+.ios .navbar .left a + a, .ios .navbar .right a + a {
+  margin-left:5px;
+}
+
+.card-expandable .card-header {
+    font-size: 20px;
+}
+.card-expandable.card-opening .card-header, .card-expandable.card-opened .card-header {
+    font-size: 27px;
+}
+.back {
+  float: right;
+}
+.close-button {
+  width: 30px !important;
+  margin: 10px;
+}
+
+/* *********************************
+* CARDS
+********************************** */
+/* .ios .card {
+    background-color: transparent;
+    -webkit-transition-duration: 0.3s;
+	-moz-transition-duration: 0.3s;
+	-o-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: -webkit-transform;
+	-moz-transition-property: -moz-transform;
+	-o-transition-property: -o-transform;
+    transition-property: transform;
+    margin:20px 20px;
+    background-color: #fff;
+    overflow: hidden;
+}
+.card-infos {
+    padding:10px;
+} */
+.ios a {
+    color:#000;
+}
+@media (min-width: 768px) {
+    #servicos {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    #servicos .card {
+      flex-shrink: 10;
+      min-width: 0;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    #servicos .card {
+      width: calc((100% - var(--f7-card-expandable-margin-horizontal) * 3) / 2);
+    }
+    #servicos .card:nth-child(2),
+    #servicos .card:nth-child(4) {
+      margin-left: 0;
+    }
+    #servicos .card:nth-child(n + 3) {
+      margin-top: 0;
+    }
+  }
+  @media (min-width: 1024px) {
+    #servicos .card {
+      width: calc((100% - var(--f7-card-expandable-margin-horizontal) * 5) / 4);
+    }
+    #servicos .card:nth-child(n + 2) {
+      margin-left: 0;
+    }
+  }
+  .view-master-detail .navbar-master-detail-root .link.back,
+  .view-master-detail .page-master-detail-root .navbar .link.back {
+    display: none;
+  }
+
+  iframe {
+    width:100% !important;
+    height: auto   !important;
+  }
+  .card-content img {
+    max-width:100% !important;
+    height:auto !important;
+  }
+  .icon-navbar-link .icon {
+    margin:0 4px !important;
+  }
+  .icon-navbar-link {
+    margin:0 !important;
+  }
+  .name-user {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width:100px;
+    display: block;
+  }
+  .card-expandable {
+    height:315px;
+  }
+  .card-expandable:not(.card-opened) .card-content {
+    width: 100%;
+    height: 315px;
+  }
+  .card-expandable:not(.card-opened) .card-header {
+    height: 75px;
+  }
+  .card-content-padding img {
+    width:100% !important;
+  }
+  .card-content-padding  figure {
+    margin:0;
+  }
+  .blocks-gallery-grid {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+  }
+  .blocks-gallery-grid li {
+    margin:0 5px;
+  }
+  .fab-buttons a, .fab>a {
+    color:#fff;
+  }
+  #agendamento-error {
+    background: #de5e13;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50px;
+    text-align: center;
+  }

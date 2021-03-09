@@ -1,0 +1,7 @@
+{
+    "name": "unifisio",
+    "type": "custom",
+    "integrations": {
+      "cordova": {}
+    }
+  }

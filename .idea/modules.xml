@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/plugins/cordova-plugin-whitelist/src/cordova-plugin-whitelist.iml" filepath="$PROJECT_DIR$/plugins/cordova-plugin-whitelist/src/cordova-plugin-whitelist.iml" />
+      <module fileurl="file://$PROJECT_DIR$/plugins/cordova-plugin-whitelist/tests/tests.iml" filepath="$PROJECT_DIR$/plugins/cordova-plugin-whitelist/tests/tests.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/unifisioapp.iml" filepath="$PROJECT_DIR$/.idea/unifisioapp.iml" />
+    </modules>
+  </component>
+</project>
